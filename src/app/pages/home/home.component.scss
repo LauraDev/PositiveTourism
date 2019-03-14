@@ -3,12 +3,15 @@
 .margin-top {
   margin-top: 40px;
 }
+
 .margin-bottom {
   margin-bottom: 2.5rem;
 }
+
 .subheader {
   color: $color-secondary;
 }
+
 .full-screen {
   height: calc(100vh - 55px);
 
@@ -24,9 +27,12 @@
 
   .middle-content-section {
     text-align: center;
-    h1, h2 {
+
+    h1,
+    h2 {
       color: $color-white;
     }
+
     h2 {
       margin-top: 80px;
     }
@@ -52,6 +58,7 @@
 .small-container {
   max-width: 700px;
 }
+
 .why {
 
   h3 {
@@ -65,12 +72,14 @@
   }
 
 }
+
 .why-content {
   padding-left: 2rem;
 }
 
 .grey-bg {
   background-color: $color-light;
+
   h3 {
     color: $color-primary;
   }
@@ -86,6 +95,7 @@
   margin: 40px auto;
   max-width: 650px;
 }
+
 #last-question {
   margin-top: 2.5rem;
   font-family: 'bariol-i';
@@ -96,9 +106,11 @@
 ul {
   margin-left: 0;
 }
+
 ul li {
   list-style: none;
 }
+
 ul li:before {
   content: '\2713';
   display: inline-block;
@@ -120,6 +132,7 @@ ul li:before {
   font-size: 1.2rem;
   overflow: hidden;
 }
+
 .check {
   position: absolute;
   top: 7px;
@@ -128,25 +141,29 @@ ul li:before {
   width: 20px;
   height: 20px;
 }
+
 .check-inputs input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-.check-inputs:hover input ~ .check {
-  background-color: darken($color-light, 4);;
+
+.check-inputs:hover input~.check {
+  background-color: darken($color-light, 4);
+  ;
 }
-.check-inputs input:checked ~ .check {
+
+.check-inputs input:checked~.check {
   background-color: $color-secondary;
 }
 
-.check-inputs input:checked ~ .check:after {
+.check-inputs input:checked~.check:after {
   display: block;
 }
 
-.check-inputs input:checked ~ .check:after {
+.check-inputs input:checked~.check:after {
   left: 5px;
   top: 2px;
   width: 8px;
@@ -162,4 +179,21 @@ ul li:before {
   content: "";
   position: absolute;
   display: none;
+}
+
+.rating {
+  margin-bottom: 1rem;
+}
+
+.rating>span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+.rating>span:before,
+.rating>span~span:before {
+  content: "\2605";
+  position: absolute;
+  color: goldenrod;
 }
