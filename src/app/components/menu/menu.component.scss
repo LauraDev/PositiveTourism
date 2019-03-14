@@ -1,0 +1,14 @@
+@import "../../../variables.scss";
+
+.menu .menu-text {
+    padding: 0;
+}
+.top-bar {
+    width: 100%;
+}
+.top-bar, .top-bar-left ul, .top-bar-right ul {
+    background-color: $color-primary;
+}
+.top-bar-left a, .top-bar-right a {
+    color: $color-white;
+}

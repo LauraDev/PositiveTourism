@@ -1,0 +1,19 @@
+@import "../../../variables.scss";
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    background-color: $color-primary;
+    p {
+        color: $color-white;
+        margin: 0;
+    }
+    #copyright-and-privacy, #copyright-and-privacy a {
+        font-size: 1rem;
+        color: $color-dark;
+        margin-top: 1rem;
+    }
+}

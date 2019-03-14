@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+#not-found {
+  min-height: calc(100% - 103px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link-with-top-margin {
+  margin-top: 15px;
+}

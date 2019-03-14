@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables.scss";
+
+@font-face {
+    font-family: 'bariol';
+    src: url('/assets/fonts/bariol.woff');
+}
+@font-face {
+    font-family: 'bariol-i';
+    src: url('/assets/fonts/bariol-i.woff');
+}
+@font-face {
+    font-family: 'averia-b';
+    src: url('/assets/fonts/averia-b.ttf');
+}
+
+html, body {
+    height: 100%;
+}
+body {
+  font-family: 'bariol';
+  font-size: 1.3rem;
+  color: $color-dark;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'bariol';
+    font-weight: bold;
+    color: $color-primary;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.larger {
+  font-size: larger;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.container {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vertical-margin {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.vertical-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.call-to-action {
+  background-color: #f6f7f8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.button {
+  border-radius: 30px;
+  padding: .85em 1.5em;
+}
+
+.box-shadow {
+  box-shadow: 5px 10px 18px #888888;
+}

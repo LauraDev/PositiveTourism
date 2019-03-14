@@ -1,0 +1,22 @@
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p><strong>Tourism </strong>has long been cited by world leaders <br> as a <strong>driver of peace and security</strong> through understanding.</p>
+  </div>
+
+  <div class="mySlides">
+    <p><strong>Tourism </strong>can create civic pride by encouraging cultivation and sharing of local customs, food, traditions and festivals. <br> Personal exchanges between hosts and guests goes a long way toward <strong>fostering better cultural understanding</strong>.</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+  <a class="next" (click)="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" (click)="currentSlide(1)"></span>
+  <span class="dot" (click)="currentSlide(2)"></span>
+</div>
