@@ -10,6 +10,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { TourListComponent } from './pages/tour/tour-list/tour-list.component';
 import { AboutComponent } from './pages/about/about.component';
 import { TextSlideshowComponent } from './components/text-slideshow/text-slideshow.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TextSlideshowComponent } from './components/text-slideshow/text-slidesh
     NotFoundComponent,
     TourListComponent,
     AboutComponent,
-    TextSlideshowComponent
+    TextSlideshowComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
