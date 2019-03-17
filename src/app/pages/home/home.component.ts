@@ -8,19 +8,18 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  myDate: Date;
+  public labels: Array<string>;
+  public myDate: Date;
 
   constructor() { }
 
-  checkboxes = document.getElementsByTagName('input');
-
-
   ngOnInit() {
     this.myDate = new Date();
-  }
-
-  changeBackground() {
-    (this.checkboxes[1] as HTMLElement).style.backgroundColor = 'red';
+    this.labels = [
+      'Do you need to regenerate yourself on holiday ?',
+      'Would you like to discover extraordinary places ?',
+      'Do you feel like meeting new people and discovering a new culture ?'
+    ]
   }
 
 }

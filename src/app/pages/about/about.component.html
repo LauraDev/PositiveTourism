@@ -30,40 +30,9 @@
       <span class="larger">#</span>Team
     </h2>
     <div class="grid-x all-cards">
-      <div class="cell medium-4">
-        <div class="card">
-          <img src="assets/images/holly.png" alt="Holly Avatar" style="width:100%">
-          <div class="card-container">
-            <h4><b>Holly</b></h4>
-            <p>
-              ??? <br>
-              <span>Positive Traveller since: ???</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="cell medium-4">
-        <div class="card">
-          <img src="assets/images/laura.png" alt="Laura Avatar" style="width:100%">
-          <div class="card-container">
-            <h4><b>Laura</b></h4>
-            <p>
-              Web & Mobile Developer <br>
-              <span>Positive Traveller since: 2014</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="cell medium-4">
-        <div class="card">
-          <img src="assets/images/lucas.png" alt="Lucas Avatar" style="width:100%">
-          <div class="card-container">
-            <h4><b>Lucas</b></h4>
-            <p>
-              Senior Software Engineer <br>
-              <span>Positive Traveller since: ???</span>
-            </p>
-          </div>
+      <div *ngFor="let teamMember of teamMembers">
+        <div class="cell medium-4 mobile-vertical-margin">
+          <app-card [teamMember]="teamMember"></app-card>
         </div>
       </div>
     </div>

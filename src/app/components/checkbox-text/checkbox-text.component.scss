@@ -1,0 +1,63 @@
+@import "../../../variables.scss";
+
+.check-inputs {
+  display: block;
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: .7rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.check {
+  position: absolute;
+  top: 0.4375rem;
+  left: 0;
+  border: 0.064rem solid $color-secondary;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.check-inputs input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check-inputs:hover input~.check {
+  background-color: darken($color-light, 4);
+  ;
+}
+
+.check-inputs input:checked~.check {
+  background-color: $color-secondary;
+}
+
+.check-inputs input:checked~.check:after {
+  display: block;
+}
+
+.check-inputs input:checked~.check:after {
+  left: 0.3125rem;
+  top: 0.125rem;
+  width: 0.5rem;
+  height: 0.6875rem;
+  border: solid $color-white;
+  border-width: 0 0.1875rem 0.1875rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}

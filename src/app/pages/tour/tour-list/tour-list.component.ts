@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TourService } from 'src/app/services/tour.service';
+import { Tour } from 'src/app/class/Tour';
 
 @Component({
   selector: 'app-tour-list',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TourListComponent implements OnInit {
 
-  constructor() { }
+  public tours: Array<Tour>;
 
-  ngOnInit() {
+  constructor(
+    private tourService: TourService
+  ) {
+
   }
 
+  ngOnInit() {
+    this.getTours();
+  }
+
+  private getTours() {
+    this.tourService.list().then(
+      tours => this.tours = tours
+    );
+  }
 }
