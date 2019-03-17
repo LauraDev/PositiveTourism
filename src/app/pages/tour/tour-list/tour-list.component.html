@@ -1,3 +1,5 @@
 <div id="tour-list">
-  tour-list works!
+  <div *ngFor="let tour of tours">
+    <app-tour-overview [tour]=tour></app-tour-overview>
+  </div>
 </div>

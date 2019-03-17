@@ -28,27 +28,14 @@
   <div class="main-content">
 
     <section id="presentation">
-      <div class="">
+      <div class="container">
         <div id="small-container">
           <p class="subheader text-center">Want to know if you should</p>
           <h2 class="margin-bottom text-center">Try Positive Tourism ?</h2>
-          <label class="check-inputs">
-            <input type="checkbox" (checked)="changeBackground()">
-            <span class="check"></span>
-            Do you need to regenerate yourself on holiday ?
-          </label>
-          <label class="check-inputs">
-            <input type="checkbox">
-            <span class="check"></span>
-            Would you like to discover extraordinary places ?
-          </label>
-          <label class="check-inputs">
-            <input type="checkbox">
-            <span class="check"></span>
-            Do you feel like meeting new people and discovering a new culture ?
-          </label>
-
-          <div id="last-question" class="margin-top text-center">
+          <div *ngFor="let label of labels">
+            <app-checkbox-text [label]="label"></app-checkbox-text>
+          </div>
+          <div id="last-question" class="margin-top">
             What about doing all that, making an entire community benefit from it ?
           </div>
         </div>
@@ -147,8 +134,10 @@
           <br>
           Because a video says more than a long speech, please enjoy yourself and <a routerLink="/east-java">check out this tour</a>.
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0FefPrlW9uk?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0FefPrlW9uk?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 

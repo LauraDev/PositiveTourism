@@ -1,0 +1,24 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "name": "Indonesia - East Java",
+      "address": "Test address",
+      "phone": "0000000000",
+      "pictures": [],
+      "overviewImage": "assets/images/banyuangi.jpg",
+      "overviewTitle": "Banyuangi Tour",
+      "overviewSubtitle": "Indonesia - East Java"
+    },
+    {
+      "id": 2,
+      "name": "Indonesia - Test",
+      "address": "Test address",
+      "phone": "0000000000",
+      "pictures": [],
+      "overviewImage": "assets/images/indonesian-children.jpg",
+      "overviewTitle": "Test Tour",
+      "overviewSubtitle": "Indonesia - Test"
+    }
+  ]
+}
