@@ -1,5 +1,5 @@
 <div id="tour-list" class="page vertical-margin">
   <div *ngFor="let tour of tours">
-    <app-tour-overview *ngIf="tour.validated" [tour]=tour></app-tour-overview>
+    <app-tour-overview *ngIf="tour.isValidated" [tour]=tour></app-tour-overview>
   </div>
 </div>

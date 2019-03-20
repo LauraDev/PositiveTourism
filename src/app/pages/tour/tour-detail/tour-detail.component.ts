@@ -19,6 +19,7 @@ export class TourDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    ($(document) as any).foundation();
     const url = this.route.snapshot.paramMap.get('url');
     this.tourService.getTour(url).then( tour => {
       if(!tour) {

@@ -14,8 +14,13 @@
       "communityBenefits": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ...",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
       "duration": "2-week",
+      "isValidated": true,
       "name": "Banyuwangi Tour",
+      "overviewImage": "assets/images/banyuwangi/banyuwangi.jpg",
+      "overviewTitle": "Banyuwangi Tour",
+      "overviewSubtitle": "Indonesia - East Java",
       "price": "???",
+      "volunteering": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...",
       "pictures": [
         {
           "img": "assets/images/banyuwangi/beach.JPG",
@@ -38,12 +43,99 @@
           "text": "Flannel kale chips selvage kitsch"
         }
       ],
-      "overviewImage": "assets/images/banyuwangi/banyuwangi.jpg",
-      "overviewTitle": "Banyuwangi Tour",
-      "overviewSubtitle": "Indonesia - East Java",
-      "validated": true,
-      "volunteering": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ..."
+      "program": [
+        {
+          "description": "Start from Bali to East Java / Banyuwangi. From Bali to gilimanuk harbour 3 hours then Across by ferry 1 hour to ketapang habour. From ketapang harbour to home stay 1 hour. After arriving in home stay you will have rest time,, then if you fell very okay / no tired , we will introduce the program and the culture in java (Banyuwangi). In the first night you can stay at home stay",
+          "note": "in this tour you can stay at hotel ,but to get closer to local people it’s better stay at home stay",
+          "included": ["Home stay", "Dinner", "Transport from ketapang harbour to home stay", "Transport from Bali to gilimanuk harbour , ferry (if needed)"],
+          "excluded": ["Lunch"]
+        },
+        {
+          "description": "From home stay go  jawatan (nice place to take photos) – then go to red island (enjoy the beach until sun set) – go to home stay at rajegwesi village. Wake up at 09:00 drinking coffee, and have breakfast take shower. Around at 10:00 go to jawatan (photo spot ) arrive in jawatan at 11:00 am then we enjoy drinking, and snack, take photos after that go to red island beach. From jawatan to red island about 2.5 hour. On the way to red island we will go to dragon fruit garden, see the trees and take the fruit by ourselves. After finishing from here directly we go to red island beach. (we can eat / take dragon fruit from the trees only at the season). In this red island we wait spectacular sun set (we do hope it is not raining or cloudy and if we are luck we can see best sun set). In red island we can lay down on the beach chair, swimming, or surfing. After enjoying sun set we go to rajegwesi village. On the way to rajegwesi village we will stop and have dinner in warung/lesehan in this night we will stay a night in home stay. Rest time",
+          "included": ["Transport", "guide", "jawatan ticket", "Red island ticket", "Donation for dragon friute farmer", "Merubetiri national park ticket", "Dinner before home stay", "Accommodation in rajegwesi home stay", "Rent chair and umbrella"],
+          "excluded": ["surfing board in red island beach", "Lunch in Red Island or before Red Island", "Personal expenses (toilet, extra snacks at local warung, drinking beer)", "Mosquito lotion", "Warmer jacket"]
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        },
+        {
+          "description": "",
+          "note": "",
+          "included": "",
+          "excluded": ""
+        }
+      ]
     },
+
     {
       "id": 2,
       "address": "Test address",
@@ -53,7 +145,7 @@
       "overviewImage": "assets/images/indonesian-children.jpg",
       "overviewTitle": "Test Tour",
       "overviewSubtitle": "Indonesia - Test",
-      "validated": false
+      "isValidated": false
     }
   ]
 }
