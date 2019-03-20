@@ -16,6 +16,8 @@ import { TourOverviewComponent } from './pages/tour/tour-overview/tour-overview.
 import { TourDetailComponent } from './pages/tour/tour-detail/tour-detail.component';
 import { CardComponent } from './components/card/card.component';
 import { CheckboxTextComponent } from './components/checkbox-text/checkbox-text.component';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CheckboxTextComponent } from './components/checkbox-text/checkbox-text.
     TourOverviewComponent,
     TourDetailComponent,
     CardComponent,
-    CheckboxTextComponent
+    CheckboxTextComponent,
+    ImageSliderComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

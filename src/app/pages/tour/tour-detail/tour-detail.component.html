@@ -1,3 +1,60 @@
-<p>
-  tour-detail works!
-</p>
+<div id="tour-detail" *ngIf="tour">
+
+  <app-image-slider [slides]="tour.pictures"></app-image-slider>
+
+  <section class="container">
+    <div class="vertical-margin">
+      <p class="subheader">{{tour.contact.city}}</p>
+      <h2>{{tour.name}}</h2>
+      <p>{{tour.description}}</p>
+    </div>
+  </section>
+
+  <section class="light-bg vertical-padding" id="description">
+    <div class="container vertical-margin grid-x text-center">
+      <div class="cell medium-4">
+        <h4>What you'll do</h4>
+        <p>{{tour.clientBenefits}}</p>
+      </div>
+      <div class="cell medium-4">
+        <h4>Community Benefits</h4>
+        <p>{{tour.communityBenefits}}</p>
+      </div>
+      <div class="cell medium-4">
+        <h4>Volunteering</h4>
+        <p>{{tour.volunteering}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="vertical-margin grid-x text-center">
+      <div class="cell medium-4">
+          <i class="icon big ion-md-pin"></i>
+          <p class="subheader">Location</p>
+        <h4>{{tour.contact.city}}</h4>
+      </div>
+      <div class="cell medium-4">
+        <i class="icon big ion-md-hourglass"></i>
+        <p class="subheader">Duration</p>
+        <h4>{{tour.duration}}</h4>
+      </div>
+      <div class="cell medium-4">
+        <i class="icon big ion-md-card"></i>
+        <p class="subheader">Price</p>
+        <h4>{{tour.price}}</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="light-bg vertical-padding">
+    <div class="container vertical-margin text-center">
+      <div>
+        <a routerLink="" class="button large">Discover the {{tour.duration}} program</a>
+      </div>
+    </div>
+  </section>
+
+  <app-contact [contact]="tour.contact"></app-contact>
+
+</div>

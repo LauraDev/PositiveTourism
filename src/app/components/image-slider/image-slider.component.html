@@ -1,0 +1,28 @@
+<div class="slider" id="slider">
+
+  <ul class="slider__container">
+    <li class="slider__item" *ngFor="let slide of slides; let slideIndex = index;" [ngClass]="{'selected': slideIndex == selectedSlideIndex}">
+      <figure class="slider__itemImage">
+        <img [src]="slide.img" [alt]="slide.alt" [title]="slide.alt">
+      </figure>
+      <div class="slider__itemText">
+        <h2 class="slider__itemTitle">{{slide.text}}</h2>
+      </div>
+    </li>
+  </ul>
+
+  <div class="slider__prev" (click)="changeImage(-1)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="-1 -1 12 32">
+      <path d="M 10,0 0,15 10,30" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <div class="slider__next" (click)="changeImage(+1)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="-1 -1 12 32">
+      <path d="M0 0l10 15L0 30" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <ul class="navThumbs">
+    <li *ngFor="let slide of slides; let slideIndex = index;" [ngClass]="{'selected': slideIndex == selectedSlideIndex}"
+      class="navThumbs__item" [ngStyle]="{'background-image': 'url(' + slide.img + ')'}" (click)="pickImage(slideIndex)"></li>
+  </ul>
+</div>

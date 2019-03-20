@@ -11,6 +11,10 @@
   display: none;
   padding: 5rem;
   text-align: center;
+
+  &.selected {
+    display: block;
+  }
 }
 
 /* Next & previous buttons */

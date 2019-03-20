@@ -1,0 +1,10 @@
+@import "../../../../variables.scss";
+
+#description p {
+  padding: 0 1rem;
+}
+
+.icon.big {
+  color: $color-secondary;
+  font-size: 3rem;
+}

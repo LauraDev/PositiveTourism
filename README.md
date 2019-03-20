@@ -1,9 +1,9 @@
 # PositiveTourism
 
-PositiveTourism is a website that aims to promote positive tourism. It puts in contact, direct and free of charge, travellers and positive tours organisers.
+BUILDING WEBSITE - PositiveTourism is a website that aims to promote positive tourism. It puts in contact, direct and free of charge, travellers and positive tours organisers.
 
 - Front-End: Angular 7
-- Back-End: Symfony 4
+- Back-End: API Platform
 - CSS Framework: Foundation 
 
 ## Prerequisite

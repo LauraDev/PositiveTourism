@@ -13,9 +13,9 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'tours', component: TourListComponent},
   { path: 'privacy-policy', component: PrivacyPolicyComponent},
+  { path: 'not-found', component: NotFoundComponent },
   { path: ':url', component: TourDetailComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: 'not-found' }
 ];
 

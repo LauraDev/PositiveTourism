@@ -9,9 +9,24 @@
     font-family: 'bariol-i';
     src: url('/assets/fonts/bariol-i.woff');
 }
-@font-face {
-    font-family: 'averia-b';
-    src: url('/assets/fonts/averia-b.ttf');
+
+app-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+app-tour-detail + app-menu {
+  display: none;
+}
+
+app-tour-detail ~ app-footer {
+  display: none;
+}
+
+.page {
+  margin-top: 59px;
 }
 
 html, body {
@@ -88,4 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .box-shadow:hover {
   box-shadow: 0.3125rem 1.25rem 2.25rem #888888;
+}
+
+.subheader {
+  color: $color-secondary;
 }
