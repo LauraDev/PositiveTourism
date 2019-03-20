@@ -18,6 +18,8 @@ import { CardComponent } from './components/card/card.component';
 import { CheckboxTextComponent } from './components/checkbox-text/checkbox-text.component';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
