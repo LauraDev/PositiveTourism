@@ -32,7 +32,7 @@ $contact-us-section-bg: $color-white;
   input[type=text],
   input[type=email],
   textarea {
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -48,7 +48,7 @@ $contact-us-section-bg: $color-white;
   }
 
   .contact-us-file-button {
-    background: transparent;
+    display: none;
   }
 }
 
@@ -84,4 +84,16 @@ $contact-us-section-bg: $color-white;
   .left-margin {
     margin-left: 2.5rem;
   }
+}
+
+#sendError, .error {
+  color: red;
+}
+
+#sendError {
+  text-align: center;
+}
+
+.error {
+  font-size: 1rem;
 }
