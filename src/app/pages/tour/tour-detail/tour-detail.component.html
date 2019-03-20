@@ -1,4 +1,4 @@
-<div id="tour-detail" *ngIf="tour">
+<div id="tour-detail">
 
   <app-image-slider [slides]="tour.pictures"></app-image-slider>
 
@@ -50,7 +50,10 @@
   <section class="light-bg vertical-padding">
     <div class="container vertical-margin text-center">
       <div>
-        <a routerLink="" class="button large">Discover the {{tour.duration}} program</a>
+        <button class="button large" data-open="myModal">Discover the {{tour.duration}} program</button>
+        <div class="large reveal" id="myModal" data-reveal>
+          <app-tour-program [name]="tour.name" [program]="tour.program"></app-tour-program>
+        </div>
       </div>
     </div>
   </section>

@@ -1,0 +1,19 @@
+.day {
+  margin-top: 2rem;
+}
+
+ul, li {
+  margin: 0;
+}
+ul {
+  padding-left: 1.3rem;
+}
+.included {
+  border-right: 1px solid lightgrey;
+}
+.excluded {
+  padding-left: 1.2rem;
+}
+.included strong , .excluded strong {
+  margin-bottom: 1rem;
+}

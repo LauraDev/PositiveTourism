@@ -1,30 +1,38 @@
 import { Contact } from './Contact';
+import { FullDayProgram } from './FullDayProgram';
 
 export class Tour {
   id;
   clientBenefits: string;
-  contact: Contact;
   communityBenefits: string;
+  contact: Contact;
   description: string;
   duration: string;
+  isValidated: boolean;
   location: string;
   name: string;
-  pictures: Array<{img: string, alt: string, text: string}>;
-  price: string;
   overviewImage: string;
   overviewTitle: string;
   overviewSubtitle: string;
+  pictures: Array<{img: string, alt: string, text: string}>;
+  price: string;
+  program: Array<FullDayProgram>;
   url: string;
-  validated: boolean;
   volunteering: string;
 
   constructor(dbTour?: any) {
     Object.assign(this, dbTour);
     if (!this.contact) {
-      this.pictures = [];
+      this.contact = new Contact();
+    }
+    if (!this.isValidated) {
+      this.isValidated = false;
     }
     if (!this.pictures) {
       this.pictures = [];
+    }
+    if (!this.program) {
+      this.program = [];
     }
     this.url = this.replaceSpacesByDash(this.name);
   }

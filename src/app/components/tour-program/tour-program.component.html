@@ -1,0 +1,36 @@
+<button class="close-button" data-close aria-label="Close modal" type="button">
+  <span aria-hidden="true">&times;</span>
+</button>
+
+<div id="no-program" *ngIf="program.length <= 0" class="container vertical-margin">
+  <h1>{{name}}</h1>
+  <h3>To get more details about this tour please contact us.</h3>
+</div>
+
+<div id="full-days-program" *ngIf="program.length > 0" class="container vertical-margin">
+  <h1 class="text-center">{{name}}</h1>
+  <div *ngFor="let day of program; let index = index" class="day">
+    <h3 *ngIf="day.description" >Day {{index + 1}} :</h3>
+    <p><strong>{{day.description}}</strong></p>
+
+    <p *ngIf="day.note">
+      <strong>Note :</strong>
+      {{day.note}}
+    </p>
+
+    <div class="grid-x">
+      <div class="included cell medium-6" *ngIf="day.included.length > 0">
+        <strong>Included: </strong>
+        <ul *ngFor="let included of day.included">
+          <li>{{included}}</li>
+        </ul>
+      </div>
+      <div class="excluded cell medium-6" *ngIf="day.excluded.length > 0">
+        <strong>Excluded: </strong>
+        <ul *ngFor="let excluded of day.excluded">
+          <li>{{excluded}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

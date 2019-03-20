@@ -19,6 +19,7 @@ import { CheckboxTextComponent } from './components/checkbox-text/checkbox-text.
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { TourProgramComponent } from './components/tour-program/tour-program.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     CardComponent,
     CheckboxTextComponent,
     ImageSliderComponent,
-    ContactComponent
+    ContactComponent,
+    TourProgramComponent
   ],
   imports: [
     BrowserModule,
