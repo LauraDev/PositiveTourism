@@ -1,9 +1,9 @@
-<div class="container margin-top">
+<div class="page container margin-top">
   <p>
-    <a [routerLink]="['/', tour.url]">{{ tour.name }}</a>
+    <a [routerLink]="['/', tour.url]" target="blank">{{ tour.name }}</a>
   </p>
 
-  <a [routerLink]="['/', tour.url]" class="card">
+  <a [routerLink]="['/', tour.url]" target="blank" class="card">
     <div class="overlay">
       <div class="card-text">
         <h3 class="card-title">

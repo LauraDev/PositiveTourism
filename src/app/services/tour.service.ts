@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
-import { Tour } from "../class/Tour";
+import { Tour } from "../models/Tour";
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 
 import { map, retry, catchError, take } from "rxjs/operators";
-import { throwError } from "rxjs";
+import { throwError, Observable } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +16,9 @@ export class TourService {
 
   public list() {
     return new Promise<any>((resolve, reject) => {
-      if (this.tours) resolve(this.tours);
-      else {
+      if (this.tours) {
+        resolve(this.tours);
+      } else {
         this.getTours().then(tours => {
           this.tours = tours;
           resolve(this.tours);
@@ -26,19 +27,24 @@ export class TourService {
     });
   }
 
-  private getTours(): Promise<Tour[]> {
-    return new Promise<any>((resolve, reject) => {
-      this.http.get('assets/mocks/tours.json')
+  public getTours(): Promise<Tour[]> {
+      return this.http.get('assets/mocks/tours.json')
       .pipe(
         retry(3),
-        take(1),
         map( res => res['tours'].map(ar => new Tour(ar)) ),
         catchError(this.handleError)
       )
-      .subscribe({
-        next(tours) { resolve(tours); }
-      });
-    });
+      .toPromise();
+  }
+
+  public getTour(url): Promise<Tour> {
+    return this.http.get('assets/mocks/tours.json')
+    .pipe(
+      retry(3),
+      map( res => res['tours'].map(ar => new Tour(ar)).filter(t => t.url === url)[0]),
+      catchError(this.handleError)
+    )
+    .toPromise();
   }
 
   private handleError(error: HttpErrorResponse) {

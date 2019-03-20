@@ -1,0 +1,42 @@
+<section class="container contact-us-section">
+  <div class="grid-x">
+    <div class="cell medium-6 contact-us-section-left">
+      <h2 class="contact-us-header">Get In Touch</h2>
+      <div class="responsive-embed">
+        <iframe [src]="safeUrl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <ul class="contact-us-list">
+        <li class="address">
+          <i class="icon ion-md-mail"></i>
+          {{contact.address}} <br>
+          <span class="left-margin">{{contact.city}}</span> <br>
+          <span class="left-margin">{{contact.postcode}}</span>
+        </li>
+        <li class="email">
+          <i class="icon ion-md-at"></i>
+          <a [href]="'mailto:' + contact.mail">{{contact.mail}}</a>
+        </li>
+        <li class="phone">
+          <i class="icon ion-md-call"></i>
+          {{contact.phone}}
+        </li>
+      </ul>
+    </div>
+    <div class="cell medium-6 contact-us-section-right">
+      <h2 class="contact-us-header">Mail Us</h2>
+      <form class="contact-us-form">
+        <input type="text" placeholder="Full name">
+        <input type="email" placeholder="Email">
+        <textarea name="message" id="" rows="12" placeholder="Type your message here"></textarea>
+        <div class="contact-us-form-actions">
+          <input type="submit" class="button" value="Send it" />
+          <div>
+            <label for="FileUpload" class="button contact-us-file-button">Attach Files</label>
+            <input type="file" id="FileUpload" class="show-for-sr">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

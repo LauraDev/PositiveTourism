@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   public labels: Array<string>;
   public myDate: Date;
+  public textSlides: Array<string>;
 
   constructor() { }
 
@@ -19,7 +20,15 @@ export class HomeComponent implements OnInit {
       'Do you need to regenerate yourself on holiday ?',
       'Would you like to discover extraordinary places ?',
       'Do you feel like meeting new people and discovering a new culture ?'
-    ]
+    ];
+    this.textSlides = [
+      `<strong>Tourism </strong>has long been cited by world leaders <br> as a <strong>
+      driver of peace and security</strong> through understanding.`,
+
+      `<strong>Tourism </strong>can create civic pride by encouraging cultivation and sharing
+      of local customs, food, traditions and festivals. <br> Personal exchanges between hosts
+      and guests goes a long way toward <strong>fostering better cultural understanding</strong>.`
+    ];
   }
 
 }
