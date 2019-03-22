@@ -1,5 +1,5 @@
 {
-  "tours": [
+  "hydra:member": [
     {
       "id": 1,
       "contact": {
@@ -7,7 +7,7 @@
         "city": "East Java - Indonesia",
         "postcode": "68472",
         "phone": "+62 85 258 834 163",
-        "mail": "javaecotour9@gmail.com",
+        "email": "javaecotour9@gmail.com",
         "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31517.549519207685!2d114.35354192050983!3d-8.209187019326553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15aeb98f842ab%3A0x4027a76e3530a90!2sBanyuwangi%2C+Banyuwangi+Sub-District%2C+Banyuwangi+Regency%2C+East+Java%2C+Indonesia!5e0!3m2!1sen!2sfr!4v1552944403668"
       },
       "clientBenefits": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -24,23 +24,23 @@
       "pictures": [
         {
           "img": "assets/images/banyuwangi/beach.JPG",
-          "alt": "Wayfarers post ironic synth Image",
-          "text": "Wayfarers post ironic synth"
+          "alt": "",
+          "text": "Green Bay"
         },
         {
           "img": "assets/images/banyuwangi/volcano.JPG",
           "alt": "",
-          "text": "DIY shoreditch vegan swag"
+          "text": "Ijen Crater"
         },
         {
           "img": "assets/images/banyuwangi/turtle.JPG",
           "alt": "",
-          "text": "Small batch bespoke thundercats"
+          "text": "Sukamade Turtle Conservation"
         },
         {
           "img": "assets/images/banyuwangi/waterfall.jpg",
           "alt": "",
-          "text": "Flannel kale chips selvage kitsch"
+          "text": "Telunjuk raung water fall"
         }
       ],
       "program": [

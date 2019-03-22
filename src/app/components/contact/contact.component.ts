@@ -36,7 +36,7 @@ export class ContactComponent implements OnInit {
     const email = form.value.email;
     const message = form.value.message;
 
-    this.contactService.postMessage(name, email, message, this.contact.mail ).then(
+    this.contactService.postMessage(name, email, message, this.contact.email ).then(
       success => this.submitted = true,
       error => this.sendError = true
     );

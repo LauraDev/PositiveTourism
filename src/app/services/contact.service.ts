@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 
-const devUrl = 'https://test/dev-api';
-// const prodUrl = 'https://test/prod-api';
+const devUrl = 'https://localhost:8443/messages';
 
 const httpOptions = {
   headers: new HttpHeaders({
