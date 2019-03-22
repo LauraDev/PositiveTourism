@@ -2,7 +2,7 @@ export class Contact {
 
   address: string;
   city: string;
-  mail: string;
+  email: string;
   mapUrl: string;
   phone: string;
   postcode: string;

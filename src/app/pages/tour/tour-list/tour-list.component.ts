@@ -22,7 +22,7 @@ export class TourListComponent implements OnInit {
   }
 
   private getTours() {
-    this.tourService.list().then(
+    this.tourService.getAll().then(
       tours => this.tours = tours
     );
   }
