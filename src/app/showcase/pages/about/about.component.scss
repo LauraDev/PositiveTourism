@@ -1,0 +1,15 @@
+@import "../../../../variables.scss";
+
+.vertical-padding {
+  padding: 4rem 0;
+}
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  .mobile-vertical-margin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
