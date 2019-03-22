@@ -1,0 +1,78 @@
+<section class="container contact-us-section">
+  <div class="grid-x">
+
+    <!-- Comtact list -->
+    <div class="cell medium-6 contact-us-section-left">
+      <h2 class="contact-us-header">Get In Touch</h2>
+      <div class="responsive-embed">
+        <iframe [src]="safeUrl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <ul class="contact-us-list">
+        <li class="address">
+          <i class="icon ion-md-mail"></i>
+          {{contact.address}} <br>
+          <span class="left-margin">{{contact.city}}</span> <br>
+          <span class="left-margin">{{contact.postcode}}</span>
+        </li>
+        <li class="email">
+          <i class="icon ion-md-at"></i>
+          <a [href]="'mailto:' + contact.email">{{contact.email}}</a>
+        </li>
+        <li class="phone">
+          <i class="icon ion-md-call"></i>
+          {{contact.phone}}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact form -->
+    <div class="cell medium-6 contact-us-section-right">
+      <h2 class="contact-us-header">Mail Us</h2>
+
+      <div *ngIf="!isSubmitted || isSent">
+        <form class="contact-us-form" (ngSubmit)="sendMessage(contactForm)" #contactForm="ngForm">
+
+            <div *ngIf="isSent" id="sendError">
+              Your message could not be sent, please try again later.
+            </div>
+
+          <input  type="text" placeholder="Full name"
+                  ngModel name="name" #name="ngModel" required minlength="6">
+          <div *ngIf="!!name.errors?.required && (name.dirty || name.touched)" class="error">
+            Please enter your full name.
+          </div>
+          <div *ngIf="!!name.errors?.minlength && name.touched" class="error">
+            The full name must contain at least 6 characters.
+          </div>
+
+          <input  type="email" placeholder="Email"
+                  ngModel name="email" #email="ngModel" required email>
+          <div *ngIf="!!email.errors?.required && (email.dirty || email.touched)" class="error">
+            Please enter your email.
+          </div>
+          <div *ngIf="!!email.errors?.email && email.touched" class="error">
+            Please enter a valid email.
+          </div>
+          <textarea rows="12" placeholder="Type your message here"
+                    ngModel name="message" #message="ngModel" required  minlength="10"></textarea>
+          <div *ngIf="!!message.errors?.required && (message.dirty || message.touched)" class="error">
+            Please enter a message.
+          </div>
+          <div *ngIf="!!message.errors?.minlength && message.touched" class="error">
+            The message must contain at least 10 characters.
+          </div>
+
+          <div class="contact-us-form-actions">
+            <input type="submit" class="button" value="Send it" [disabled]="!contactForm.form.valid">
+          </div>
+        </form>
+      </div>
+
+      <div *ngIf="isSubmitted" id="submitted">
+        Your message has been sucessully sent.
+      </div>
+
+    </div>
+  </div>
+</section>
