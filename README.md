@@ -88,3 +88,12 @@ All POST and GET requests are emitted from this service. The request URL depends
 #### Storage Service
 
 Once data are collected from the API, it is stored locally. Next time the tour list or tour detail page is called, only the tours that where created / modified since the last connection are collected.
+
+#### Docker
+
+```
+docker build -t positivetourism .
+docker run -p 8050:80 positivetourism
+```
+
+The dockerized app will be accessible at http://localhost:8050
