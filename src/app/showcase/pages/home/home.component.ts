@@ -24,9 +24,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.labels = [
-      'Do you need to regenerate yourself on holiday ?',
       'Would you like to discover extraordinary places ?',
-      'Do you feel like meeting new people and discovering a new culture ?'
+      'Are you interested in learning about cultures and people ?',
+      'Do you want to help improve lives along the way ?'
     ];
     this.textSlides = [
       `<strong>Tourism </strong>has long been cited by world leaders <br> as a <strong>

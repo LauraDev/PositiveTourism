@@ -14,9 +14,9 @@ export class AboutComponent implements OnInit {
   public teamMembers: Array<object> = [
     {
       name: 'Holly',
-      occupation: '???',
+      occupation: 'Politics and International Relations student',
       picture: 'assets/images/holly.png',
-      travelDate: '???'
+      travelDate: '2010'
     },
     {
       name: 'Laura',
@@ -28,7 +28,7 @@ export class AboutComponent implements OnInit {
       name: 'Lucas',
       occupation: 'Senior Software Engineer',
       picture: 'assets/images/lucas.png',
-      travelDate: '???'
+      travelDate: '2010'
     }
   ];
 

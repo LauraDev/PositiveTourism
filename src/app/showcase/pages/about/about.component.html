@@ -1,11 +1,27 @@
 <div id="about" class="page">
 
+  <div class="vertical-padding light-bg">
+    <div class="container">
+      <h2>
+        <span class="larger">#</span>Team
+      </h2>
+      <div class="grid-x all-cards">
+        <div *ngFor="let teamMember of teamMembers">
+          <div class="cell medium-4 mobile-vertical-margin">
+            <app-card [teamMember]="teamMember"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container vertical-margin">
     <h2>
       <span class="larger">#</span>PositiveTourism
     </h2>
     <p>
-      To us, positive tourism is a <strong>way of travelling with a mindfulness</strong> to respect,
+      Positive tourism is a <strong>way of travelling with a mindfulness</strong> to respect,
       learn and grow from the local traditions and communities that you travel to.
       It <strong>intertwines travel with an indepth cultural experience </strong>
       that is interactive and hands-on.
@@ -25,36 +41,6 @@
     </p>
   </div>
 
-
-  <div class="vertical-padding light-bg">
-    <div class="container">
-      <h2>
-        <span class="larger">#</span>Team
-      </h2>
-      <div class="grid-x all-cards">
-        <div *ngFor="let teamMember of teamMembers">
-          <div class="cell medium-4 mobile-vertical-margin">
-            <app-card [teamMember]="teamMember"></app-card>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container vertical-margin">
-    <h2>
-      <span class="larger">#</span>WhyThisWebsite
-    </h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-      a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-      of Lorem Ipsum.</p>
-  </div>
-
-
   <div class="light-bg vertical-padding">
     <div class="container">
       <h2>
@@ -71,7 +57,8 @@
         closing the cultural gaps between them. Travellers gain a <strong>unique understanding</strong> about
         the daily lives of locals, and the hardships they face. We believe by seeing this first-hand,
         prejudices about culture, religion, race and nationality disappear. Instead, empathy, admiration
-        and gratitude are felt for those we <strong>meet while traveling</strong>, and as well, for their culture and the
+        and gratitude are felt for those we <strong>meet while traveling</strong>, and as well, for their culture and
+        the
         country they live in.
       </p>
       <p>
@@ -84,5 +71,20 @@
       </p>
     </div>
   </div>
+
+
+  <!--
+
+  <div class="container vertical-margin">
+    <h2>
+      <span class="larger">#</span>WhyThisWebsite
+    </h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+      a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.</p>
+  </div> -->
 
 </div>
