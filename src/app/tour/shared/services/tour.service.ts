@@ -58,7 +58,8 @@ export class TourService {
   private getFromBackend(): Promise<any> {
     return new Promise( (resolve) => {
       const path = 'tours?isValidated=true';
-      this.backendService.getAll(path)
+      this.backendService.getAllFromMocks()
+      // this.backendService.getAll(path)
       .then(tours => {
         this.tours = tours.map(ar => new Tour(ar));
         resolve();

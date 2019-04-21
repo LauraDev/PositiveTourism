@@ -90,4 +90,19 @@ export class BackendService {
     // return an observable with a user-facing error message
     return throwError('Something bad happened; please try again later.');
   }
+
+  /**
+   * Get all tours from mocks
+   * @method getAllFromMocks
+   * @returns data
+   */
+  public getAllFromMocks(): Promise<any> {
+    return this.http.get('assets/mocks/tours.json')
+    .pipe(
+      retry(3),
+      map( res => res['hydra:member'] ),
+      catchError(this.handleError)
+    )
+    .toPromise();
+  }
 }

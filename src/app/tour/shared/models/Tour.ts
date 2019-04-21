@@ -3,8 +3,9 @@ import { FullDayProgram } from './FullDayProgram';
 
 export class Tour {
   id;
-  clientBenefits: string;
-  communityBenefits: string;
+  clientDo: string;
+  clientLearn: string;
+  clientVolunteer: string;
   contact: Contact;
   description: string;
   duration: string;
@@ -18,7 +19,6 @@ export class Tour {
   price: string;
   program: Array<FullDayProgram>;
   url: string;
-  volunteering: string;
 
   constructor(dbTour?: any) {
     Object.assign(this, dbTour);

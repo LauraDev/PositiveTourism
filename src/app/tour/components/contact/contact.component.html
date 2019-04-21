@@ -1,8 +1,8 @@
 <section class="container contact-us-section">
-  <div class="grid-x">
+  <!-- <div class="grid-x"> -->
 
     <!-- Comtact list -->
-    <div class="cell medium-6 contact-us-section-left">
+    <!-- <div class="cell medium-6 contact-us-section-left">
       <h2 class="contact-us-header">Get In Touch</h2>
       <div class="responsive-embed">
         <iframe [src]="safeUrl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -24,10 +24,10 @@
           {{contact.phone}}
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- Contact form -->
-    <div class="cell medium-6 contact-us-section-right">
+    <!-- <div class="cell medium-6 contact-us-section-right">
       <h2 class="contact-us-header">Mail Us</h2>
 
       <div *ngIf="!isSubmitted || isSent">
@@ -72,7 +72,40 @@
       <div *ngIf="isSubmitted" id="submitted">
         Your message has been sucessully sent.
       </div>
-
     </div>
-  </div>
+
+  </div> -->
+
+
+
+    <!-- Comtact without messaging option -->
+    <h2 class="contact-us-header">Get In Touch</h2>
+    <div class="grid-x">
+      <div class="cell medium-6 contact-us-section-left">
+        <div class="responsive-embed">
+          <iframe [src]="safeUrl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="cell medium-6 contact-us-section-right">
+        <ul class="contact-us-list">
+          <li class="address">
+            <i class="icon ion-md-mail"></i>
+            {{contact.address}} <br>
+            <span class="left-margin">{{contact.city}}</span> <br>
+            <span class="left-margin">{{contact.postcode}}</span>
+          </li>
+          <li class="email">
+            <i class="icon ion-md-at"></i>
+            <a [href]="'mailto:' + contact.email">{{contact.email}}</a>
+          </li>
+          <li class="phone">
+            <i class="icon ion-md-call"></i>
+            {{contact.phone}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
 </section>
